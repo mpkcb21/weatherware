@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "click>=8.0.0",
+    "hatchling>=1.29.0",
     "requests>=2.28.0",
 ]
 
