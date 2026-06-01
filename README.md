@@ -20,11 +20,12 @@ weatherware
 Basic usage:
 ```bash
 weatherware "San Diego"
-weatherware "New York"
-weatherware Chicago
+weatherware "Rancho Cucamonga"
+weatherware San Diego
+weatherware Rancho Cucamonga
 ```
 
-If you run cold, use `--cold-bias` to shift recommendations warmer:
+If you run cold, use `--cold-bias` to shift recommendations warmer (shifts the recommendation by 5 degrees):
 ```bash
 weatherware "San Francisco" --cold-bias
 ```
@@ -37,16 +38,38 @@ weatherware "Boston" --raw
 ## Example Output
 
 ```
-  📍 San Diego, California, United States
-  Partly cloudy · 62°F (feels like 51°F)
+  📍 Rancho Cucamonga, California, United States
+  Clear sky · 84°F (feels like 86°F)
 
-  ⚠️  Deceptive: actual 62°F but feels like 51°F (wind chill of 11°F) — dress warmer than it looks.
-  💨 Windy (22 mph, gusts up to 35 mph) — avoid loose layers.
-  🌡️  Big temp swing today (48°F → 72°F feels-like) — dress in layers you can remove.
+  ☀️  UV index 9 (very high) — apply sunscreen even if it doesn't feel hot.
+  🌡️  Big temp swing today (54°F → 86°F feels-like) — dress in layers you can remove.
 
   What to wear:
-  Top:           sweater or fleece
-  Bottom:        jeans or heavier trousers
-  Outer layer:   medium jacket or hoodie
-  Accessories:   sunglasses
+  Top:           lightweight t-shirt or tank top
+  Bottom:        shorts or a light skirt
+  Outer layer:   none
+  Accessories:   sunglasses, sunscreen (SPF 30+), hat for sun protection
 ```
+raw example:
+
+```
+  📍 Rancho Cucamonga, California, United States
+  Clear sky · 84°F (feels like 86°F)
+
+  ☀️  UV index 9 (very high) — apply sunscreen even if it doesn't feel hot.
+  🌡️  Big temp swing today (54°F → 86°F feels-like) — dress in layers you can remove.
+
+  What to wear:
+  Top:           lightweight t-shirt or tank top
+  Bottom:        shorts or a light skirt
+  Outer layer:   none
+  Accessories:   sunglasses, sunscreen (SPF 30+), hat for sun protection
+
+  Weather details:
+  Wind:          8 mph (gusts 10 mph)
+  Humidity:      33%
+  UV index:      9
+  Rain chance:   0% (today's max)
+  Day range:     54°F – 86°F feels-like
+```
+
