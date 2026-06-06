@@ -3,7 +3,7 @@ name = "weatherware"
 version = "0.1.0"
 description = "CLI tool that checks the weather and tells you what to wear"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 dependencies = [
     "click>=8.0.0",
     "hatchling>=1.29.0",
