@@ -1,5 +1,7 @@
 """Weatherware CLI — what should I wear today?"""
 
+from __future__ import annotations
+
 import click
 import requests
 
